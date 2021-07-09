@@ -19,7 +19,7 @@ class Counters extends Component {
                         value={counter.value}
                         selected
                     >
-                        <h4>Title</h4>
+                        <h4>#{counter.id}</h4>
 
                     </Counter>)}
               
