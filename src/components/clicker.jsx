@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Counter extends Component {
     state = {
         count: 0,
-        tags: ['tag1', 'tag2', 'tag3']
+        tags: []
     }
 
     renderTags() {
@@ -14,7 +14,8 @@ class Counter extends Component {
     render() {
         return(
             <div>
-
+                {/* you can create a inline statement here if length is 0 then print this */}
+                {this.state.tags.length === 0 && "Please add a tag!"}
                 {this.renderTags()}
             
             </div>
