@@ -1,10 +1,10 @@
-import Counter from './components/clicker';
+import Counters from './components/counters';
 
 function App() {
   console.log("hello!");
   return (
     <div className="App">
-      <Counter />
+      <Counters />
       
       
     </div>
