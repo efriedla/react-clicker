@@ -18,7 +18,10 @@ class Counters extends Component {
                         key={counter.id}
                         value={counter.value}
                         selected
-                    />)}
+                    >
+                        <h4>Title</h4>
+
+                    </Counter>)}
               
             </div>
          );
