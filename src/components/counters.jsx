@@ -20,7 +20,7 @@ class Counters extends Component {
                         id={counter.id}
                         selected
                     >
-
+                        {/* <h2>Counter! #{counter.id}</h2> */}
                     </Counter>)}
               
             </div>
