@@ -11,8 +11,13 @@ class Counters extends Component {
         ]
     }
 
-    handleDelete = () => {
-        console.log("Delete called");
+    handleDelete = (counterId) => {
+        console.log("Delete called ", counterId);
+        // create a new counter array and filter out the one being called and let React update the state
+        const counters = this.state.counters.filter(c => c.id !== counterId);
+        // this.setState({ counters: counters });
+        //simplified
+        this.setState({counters})
     };
 
     render() { 
