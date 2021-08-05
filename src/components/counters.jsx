@@ -26,7 +26,12 @@ class Counters extends Component {
         this.setState({counters})
     };
     handleIncrement = counter => {
-        console.log(counter);
+        //clone
+        const counters = [...this.state.counters];
+        const index = counters.indexOf(counter);
+        counters[index] = {...counter}
+        counters[index].value++;
+        this.setState({ counters });
     }
 
     render() { 
