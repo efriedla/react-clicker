@@ -4,4 +4,4 @@
 * list branch uses of classes and props
 * child branch the use of multiple components in sync
 * delete branch passes the delete function to the child componenet and updating the sate
-* reset branch passes
+* reset branch removes local state

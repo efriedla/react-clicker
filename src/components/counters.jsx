@@ -25,6 +25,9 @@ class Counters extends Component {
         const counters = this.state.counters.filter(c => c.id !== counterId);
         this.setState({counters})
     };
+    handleIncrement = counter => {
+        console.log(counter);
+    }
 
     render() { 
         return (
@@ -37,6 +40,7 @@ class Counters extends Component {
                     <Counter
                         key={counter.id}
                         onDelete={this.handleDelete}
+                        onIncremenet={this.handleIncrement}
                         counter={counter}
                     >
                        
