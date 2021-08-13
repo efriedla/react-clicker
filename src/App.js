@@ -38,7 +38,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-      <Nav />
+        <Nav totalCounters={this.state.counters.filter(c => c.value > 0).length}/>
         <Counters
           onReset={this.handleReset}
           onDelete={this.handleDelete}
