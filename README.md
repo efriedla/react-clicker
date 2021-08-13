@@ -6,4 +6,5 @@
 * delete branch passes the delete function to the child componenet and updating the sate
 * reset branch removes local state
 * nav branch has multiple components in sync with each other
+* clean cleaning up code for less redudency
   
