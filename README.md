@@ -5,3 +5,5 @@
 * child branch the use of multiple components in sync
 * delete branch passes the delete function to the child componenet and updating the sate
 * reset branch removes local state
+* nav branch has multiple components in sync with each other
+  
