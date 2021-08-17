@@ -37,15 +37,17 @@ class App extends Component {
   
   render() {
     return (
-      <React.Fragment>
-        <Nav totalCounters={this.state.counters.filter(c => c.value > 0).length}/>
+      <React.Fragment >
+        <Nav totalCounters={this.state.counters.filter(c => c.value > 0).length} />
+        <div className="pg-5 gt-5 container">
         <Counters
           onReset={this.handleReset}
           onDelete={this.handleDelete}
           onIncremenet={this.handleIncrement}
           counters={this.state.counters}
 
-        />
+          />
+          </div>
       
       
     </React.Fragment>

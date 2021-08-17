@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Counter extends Component {
    
     render() {
-        return(
-            <div>
-                <h4>Counter #{this.props.id}</h4>
+        return (
+            <div >
+                <h4>Counter #{this.props.counter.id}</h4>
                 <span className={this.getBadgeClass()}>{this.formateCount()}</span>
                 <button
                     onClick={() => this.props.onIncremenet(this.props.counter)}
